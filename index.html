@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<title>JavaScript on Steroid</title>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="static/css/style.css">
+	</head>
+	<body>
+		<div class="container-1">
+			<h2>Challenge 1: your age in days</h2>
+			
+			<div class="flex-box-container-1">
+				<div>
+					<button class="btn btn-primary" onclick="ageInDays()">click me</button>
+				</div>
+				<div>
+					<button class="btn btn-danger" onclick="reset()">reset</button>
+				</div>
+			</div>
+			
+			<div class="flex-box-container-1">
+				<div id="flext-box-result"></div>
+			</div>
+			
+		</div>
+		
+		
+		<div class="container-2">
+			<h2>Challenge 2: Cat Generator</h2>
+			<button class="btn btn-success" id="catgenerator" onclick="generateCat()">Generate Cat</button>
+			
+			<div class="flex-box-container-2" id="flex-cat-generator"></div>
+		</div>
+		
+		<div class="container-3">
+			<h2>Challenge 3: Rock, Paper, Scissors</h2>
+			<div class="flex-box-container-3" id="flext-box-rps-div">
+				<img id="rock" src="static/image/rock.jpg" onclick = "rpsgame(this)">
+				<img id="paper" src="static/image/paper.jpg" onclick = "rpsgame(this)">
+				<img id="scissors" src="static/image/scissor.jpg" onclick = "rpsgame(this)">
+			</div>
+		</div>
+		
+		<div class="container-4">
+			<h2>Challenge 4: Change the color of All Buttons</h2>
+			<div class="flex-box-container-4">
+				<form action="">
+				<select name="backDrop" id="background" onchange="buttonColorChange(this)">	
+				<option value="random">Random</option>
+				<option value="red">Red</option>
+				<option value="green">Green</option>
+				<option value="reset">Reset</option>
+				</select>
+				</form>
+				
+				<button class="btn btn-primary">Wee!</button>
+				<button class="btn btn-danger">Yahoo!</button>
+				<button class="btn btn-warning">Google!</button>
+				<button class="btn btn-success">Facebook!</button>
+			</div>
+		</div>
+		
+		
+		<!-- <div class="container-5">
+			<h2>Challenge 5: Blackjack</h2>
+			<div class="flex-box-container-4">
+			
+			</div>
+		</div> -->
+			<script src="static/js/script.js"></script>
+		</body>
+	</html>	
